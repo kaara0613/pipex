@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   pipx.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/16 17:23:54 by marvin            #+#    #+#             */
-/*   Updated: 2025/01/16 17:23:54 by marvin           ###   ########.fr       */
+/*   Created: 2025/01/16 17:19:55 by marvin            #+#    #+#             */
+/*   Updated: 2025/01/16 17:19:55 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#inlcude "pipex.h"
+#ifndef PIPX_H
+# define PIPX_H
 
-int main(int argc, char **argv)
-{
-    if (argc == 1)
-        return (0);
-    
-    return(0);
-}
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <limits.h>
+#include "libft/libft.h"
+
+
+#endif

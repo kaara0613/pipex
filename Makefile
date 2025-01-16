@@ -14,6 +14,7 @@ NAME = fdf
 
 SRCS = main.c\
 
+
 OBJS = $(SRCS:.c=.o)
 
 CC = cc
