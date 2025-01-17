@@ -3,19 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/16 17:23:54 by marvin            #+#    #+#             */
-/*   Updated: 2025/01/16 17:23:54 by marvin           ###   ########.fr       */
+/*   Created: 2025/01/17 16:17:24 by kaara             #+#    #+#             */
+/*   Updated: 2025/01/17 16:17:24 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#inlcude "pipex.h"
+#include "pipex.h"
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv, const char **envp)
 {
-    if (argc == 1)
-        return (0);
-    
-    return(0);
+	t_pipex	*pipex;
+
+	if (argc == 1)
+		return (0);
+	pipex = allocation_pipex(pipex);
+	pipex->path = get_path_from_envp(envp, pipex);
+	pipe_and_fork(pipex);
+	return (0);
 }

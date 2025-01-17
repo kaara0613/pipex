@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pipx.h                                             :+:      :+:    :+:   */
+/*   pipex.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/16 17:19:55 by marvin            #+#    #+#             */
-/*   Updated: 2025/01/16 17:19:55 by marvin           ###   ########.fr       */
+/*   Created: 2025/01/17 16:17:47 by kaara             #+#    #+#             */
+/*   Updated: 2025/01/17 16:17:47 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PIPX_H
-# define PIPX_H
+#ifndef PIPEX_H
+# define PIPEX_H
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <limits.h>
-#include "libft/libft.h"
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdio.h>
+# include <limits.h>
+# include <stdbool.h>
+# include "./libft/libft.h"
 
+typedef struct s_pipex
+{
+	char	*path;
+
+}	t_pipex;
 
 #endif

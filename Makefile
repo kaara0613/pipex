@@ -3,17 +3,18 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: kaara <kaara@student.42.jp>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/01/15 23:18:33 by marvin            #+#    #+#              #
-#    Updated: 2025/01/15 23:18:33 by marvin           ###   ########.fr        #
+#    Created: 2025/01/17 16:17:32 by kaara             #+#    #+#              #
+#    Updated: 2025/01/17 16:17:32 by kaara            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fdf
 
 SRCS = main.c\
-
+		allocation_pipex.c\
+		free_pipex.c\
 
 OBJS = $(SRCS:.c=.o)
 
