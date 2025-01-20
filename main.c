@@ -20,6 +20,6 @@ int	main(int argc, char **argv, const char **envp)
 		return (0);
 	pipex = allocation_pipex(pipex);
 	pipex->path = get_path_from_envp(envp, pipex);
-	pipe_and_fork(pipex);
+	spawn_child_process(pipex);
 	return (0);
 }

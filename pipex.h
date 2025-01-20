@@ -18,11 +18,15 @@
 # include <stdio.h>
 # include <limits.h>
 # include <stdbool.h>
+# include <sys/types.h>
 # include "./libft/libft.h"
 
 typedef struct s_pipex
 {
 	char	*path;
+	int		cmdc;
+	int		cmdc_i;
+	int		exit_status;
 
 }	t_pipex;
 
