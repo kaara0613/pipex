@@ -18,10 +18,10 @@ int	main(int argc, char **argv, const char **envp)
 
 	if (argc == 1)
 		return (0);
-	pipex = allocation_pipex(pipex);
+	pipex = allocation_pipex();
 	store_args_in_struct(pipex, argc, argv);
 	pipex->path = get_path_from_envp(envp, pipex);
 	spawn_child_and_process(pipex, envp);
-	free_exit(pipx, true);
+	free_exit(pipex, true);
 	return (pipex->final_exit_status);
 }

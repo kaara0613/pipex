@@ -29,9 +29,10 @@ typedef struct s_pipex
 	int		cmdc_i;
 	char	***cmdv;
 	char	**path;
+	char	*full_path;
+	int		*pipefd;
 	int		exit_status;
 	int		final_exit_status;
-
 }	t_pipex;
 
 //allocation_pipex.c
@@ -42,12 +43,10 @@ char	*get_path_from_envp(const char **envp, t_pipex *pipex);
 
 //spawn_child_and_process.c
 int		spawn_child_and_process(t_pipex	*pipex,
-				int argc, char **argv);
-
-
+			const char **envp);
 
 
 //free_exit.c
-void	free_exit(t_pipex	pipx, bool	exit_status);
+void	free_exit(t_pipex	*pipex, bool	exit_status);
 
 #endif
