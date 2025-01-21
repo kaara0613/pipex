@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   allocation_and=cpy.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/17 16:17:24 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/17 16:17:24 by kaara            ###   ########.fr       */
+/*   Created: 2025/01/21 16:13:25 by kaara             #+#    #+#             */
+/*   Updated: 2025/01/21 16:13:25 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int	main(int argc, char **argv, const char **envp)
+char	*allocation_and_cpy(const char *src)
 {
-	t_pipex	*pipex;
+	char result_str;
 
-	if (argc == 1)
-		return (0);
-	pipex = allocation_pipex(pipex);
-	store_args_in_struct(pipex, argc, argv);
-	pipex->path = get_path_from_envp(envp, pipex);
-	spawn_child_and_process(pipex, envp);
-	free_exit(pipx, true);
-	return (pipex->final_exit_status);
+	result_str = (char *)malloc(sizeof(char) * ft_strlen(src));
+	if (result_str == NULL)
+	{
+		perror("allocation filed");
+		return (NULL);
+	}
+	ft_memcpy(result_str, src, sizeof(char) * ft_strlen(argv[1]));
+	return (str);
 }
