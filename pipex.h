@@ -27,8 +27,8 @@ typedef struct s_pipex
 	char	*outfile_name;
 	int		cmdc;
 	int		cmdc_i;
-	char	**cmdv;
-	char	*path;
+	char	***cmdv;
+	char	**path;
 	int		exit_status;
 	int		final_exit_status;
 

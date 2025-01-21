@@ -22,12 +22,12 @@ void	store_args_in_struct(t_pipex *pipex, int argc, char **argv)
 		free_exit(pipex);
 	pipex->cmdc = argc - 2 - 1;
 	pipex->cmdc_i = 0;
-	pipex->cmdv = (char **)malloc(sizeof(char *) * pipex->cmdc);
+	pipex->cmdv = (char ***)malloc(sizeof(char **) * pipex->cmdc);
 	if (pipex->cmdv == NULL)
 		free_exit(pipex);
 	while (pipex->cmdc_i <= pipex->cmdc)
 	{
-		pipex->cmdv[pipex->cmdc_i] = allocation_and_cpy(argv[pipex->cmdc_i + 1 + 1]);
+		pipex->cmdv[pipex->cmdc_i] = ft_split(argv[pipex->cmdc_i + 1 + 1], ' ');
 		if (pipex->cmdv[pipex->cmdc_i] == NULL)
 			free_exit(pipex);
 		pipex->cmdc_i++;
