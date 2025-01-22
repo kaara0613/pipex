@@ -25,3 +25,6 @@ char	*allocation_and_cpy(const char *src)
 	ft_memcpy(result_str, src, sizeof(char) * ft_strlen(src));
 	return (result_str);
 }
+
+
+//ここではexitしないから呼び出し元で全体freeする必要がある。

@@ -1,33 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   store_execve_argv.c                                :+:      :+:    :+:   */
+/*   free_execve_argv.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaara <kaara@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/22 15:12:27 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/22 17:09:56 by kaara            ###   ########.fr       */
+/*   Created: 2025/01/22 16:43:48 by kaara             #+#    #+#             */
+/*   Updated: 2025/01/22 16:46:23 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-char	**store_execve_argv(t_pipex *pipex, char **cmd)
+void	free_execve_argv(char **execve_argv)
 {
-	int		i;
-	int		execve_argc;
-	char	**execve_argv;
+	int	i;
 
-	execve_argc = 0;
-	while (cmd[i] != NULL)
-		execve_argc++;
-	execve_argv[0] = allocation_and_cpy(pipex->full_path);
-	i = 1;
-	while (cmd[i] != NULL)
-	{
-		execve_argv[i] = allocation_and_cpy(cmd[i]);
-		i++;
-	}
-	execve_argv[i] = NULL;
-	return (execve_argv);
+	i = 0;
+	while (execve_argv[i] != NULL)
+		free(execve_argv[i]);
+	free(execve_argv);
 }

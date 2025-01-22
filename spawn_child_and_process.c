@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   spawn_child_and_process.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
+/*   By: kaara <kaara@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:01 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/22 16:12:25 by kaara            ###   ########.fr       */
+/*   Updated: 2025/01/22 16:49:12 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	spawn_child_and_process(t_pipex	*pipex, const char **envp)
 
 	if (pipex->cmdc_i >= pipex->cmdc - 1)
 		return (pipex->final_exit_status);
+	//store_execve_argvもってくるかも
 	pid = fork();
 	if (pid < 0)
 		false_fork(pipex);
@@ -31,6 +32,7 @@ int	spawn_child_and_process(t_pipex	*pipex, const char **envp)
 			exec_to_from_pipefd(pipex, envp);
 	}
 	pipex->cmdc_i++;
+	free_execve_argv(pipex->execve_argv);
 	close(pipex->pipe_fd[0]);
 	waitpid(pid, pipex->exit_status, 0);
 	spawn_child_and_process(pipex, envp);
