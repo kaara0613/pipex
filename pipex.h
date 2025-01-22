@@ -30,7 +30,7 @@ typedef struct s_pipex
 	char	***cmdv;
 	char	**path;
 	char	*full_path;
-	int		*pipefd;
+	int		pipe_fd[2];
 	int		exit_status;
 	int		final_exit_status;
 }	t_pipex;
