@@ -16,9 +16,11 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <fcntl.h>
 # include <limits.h>
 # include <stdbool.h>
 # include <sys/types.h>
+# include <sys/wait.h>
 # include "./libft/libft.h"
 
 typedef struct s_pipex
@@ -30,7 +32,10 @@ typedef struct s_pipex
 	char	***cmdv;
 	char	**path;
 	char	*full_path;
+	int		infile_fd;
+	int		outfile_fd;
 	int		pipe_fd[2];
+	char	**execve_argv;
 	int		exit_status;
 	int		final_exit_status;
 }	t_pipex;

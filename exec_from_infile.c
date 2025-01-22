@@ -12,15 +12,29 @@
 
 #include "pipex.h"
 
-int	voidexec_from_infile(t_pipex *pipex, const char **envp)
+void	voidexec_from_infile(t_pipex *pipex, const char **envp)
 {
 	pipex->full_path = validate_cmd_full_path(pipex,
 			pipex->cmdv[pipex->cmdc_i][0]);
+	pipex->execve_argv = store_execve_argv(pipex);
 	if (pipe(pipex->pipe_fd) == -1)
 	{
 		perror("pipe return -1.");
 		exit(EXIT_FAILURE);
 	}
-	read(pipex->infile_name, );
-	execve(pipex->full_path, );
+	pipex->infile_fd = open(pipex->infile_name, O_RDONLY);
+	if (dup2(pipex->infile_fd, STDIN_FILENO) == -1)
+	{
+		perror("dup2 return -1.");
+		exit(EXIT_FAILURE);
+	}
+	if (dup2(STDOUT_FILENO, pipex->pipe_fd[1]) == -1)
+	{
+		perror("dup2 return -1.");
+		exit(EXIT_FAILURE);
+	}
+	close(pipex->infile_fd);
+	execve(pipex->full_path, pipex->execve_argv, envp);
+	perror("execve failed");
+	exit(EXIT_FAILURE);
 }
