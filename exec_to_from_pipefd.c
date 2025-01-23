@@ -12,11 +12,12 @@
 
 #include "pipex.h"
 
-int	exec_to_from_pipefd(t_pipex *pipex, const char **envp)
+int	exec_to_from_pipefd(t_pipex *pipex, char *const *envp)
 {
 	pipex->full_path = validate_cmd_full_path(pipex,
 			pipex->cmdv[pipex->cmdc_i][0]);
-	pipex->execve_argv = store_execve_argv(pipex);
+	pipex->execve_argv
+		= store_execve_argv(pipex, pipex->cmdv[pipex->cmdc_i]);
 	if (dup2(pipex->pipe_fd[1], STDIN_FILENO) == -1)
 	{
 		perror("dup2 return -1.");

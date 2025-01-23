@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   spawn_child_and_process.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaara <kaara@student.42tokyo.jp>           +#+  +:+       +#+        */
+/*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:01 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/22 16:49:12 by kaara            ###   ########.fr       */
+/*   Updated: 2025/01/23 16:23:02 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int	spawn_child_and_process(t_pipex	*pipex, const char **envp)
+int	spawn_child_and_process(t_pipex	*pipex, char *const *envp)
 {
 	pid_t	pid;
 
@@ -34,6 +34,7 @@ int	spawn_child_and_process(t_pipex	*pipex, const char **envp)
 	pipex->cmdc_i++;
 	free_execve_argv(pipex->execve_argv);
 	close(pipex->pipe_fd[0]);
-	waitpid(pid, pipex->exit_status, 0);
 	spawn_child_and_process(pipex, envp);
+	waitpid(pid, &pipex->exit_status, 0);
+	return (pipex->final_exit_status);
 }

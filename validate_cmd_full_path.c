@@ -18,9 +18,10 @@ char	*validate_cmd_full_path(t_pipex *pipex, char *cmd)
 	char	*add_slash;
 	char	*full_path;
 
+	i = 0;
 	while (pipex->path[i] != NULL)
 	{
-		add_slash = ft_strjoin(pipex->path[i], '/');
+		add_slash = ft_strjoin(pipex->path[i], "/");
 		if (add_slash == NULL)
 			free_exit(pipex, false);
 		full_path = ft_strjoin(add_slash, cmd);
@@ -30,6 +31,7 @@ char	*validate_cmd_full_path(t_pipex *pipex, char *cmd)
 			break ;
 		free(add_slash);
 		free(full_path);
+		i++;
 	}
 	free(add_slash);
 	return (full_path);

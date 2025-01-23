@@ -14,7 +14,7 @@
 
 char	*allocation_and_cpy(const char *src)
 {
-	char	result_str;
+	char	*result_str;
 
 	result_str = (char *)malloc(sizeof(char) * ft_strlen(src));
 	if (result_str == NULL)

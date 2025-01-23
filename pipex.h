@@ -43,15 +43,41 @@ typedef struct s_pipex
 //allocation_pipex.c
 t_pipex	*allocation_pipex(void);
 
+//allocation_and_cpy.c
+char	*allocation_and_cpy(const char *src);
+
+//store_args_in_struct.c
+void	store_args_in_struct(t_pipex *pipex, int argc, char **argv);
+
 //get_path_from_envp.c
-char	*get_path_from_envp(const char **envp, t_pipex *pipex);
+char	**get_path_from_envp(char *const *envp, t_pipex *pipex);
 
 //spawn_child_and_process.c
 int		spawn_child_and_process(t_pipex	*pipex,
-			const char **envp);
+			char *const *envp);
 
+//false_fork.c
+void	false_fork(t_pipex	*pipex);
+
+//validate_cmd_full_path.c
+char	*validate_cmd_full_path(t_pipex *pipex, char *cmd);
+
+//store_execve_argv.c
+char	**store_execve_argv(t_pipex *pipex, char **cmd);
+
+//voidexec_from_infile.c
+void	exec_from_infile(t_pipex *pipex, char *const *envp);
+
+//exec_to_from_pipefd.c
+int		exec_to_from_pipefd(t_pipex *pipex, char *const *envp);
+
+//exec_to_outfile.c
+int		exec_to_outfile(t_pipex *pipex, char *const *envp);
+
+//free_execve_argv.c
+void	free_execve_argv(char **execve_argv);
 
 //free_exit.c
-void	free_exit(t_pipex	*pipex, bool	exit_status);
+int		free_exit(t_pipex	*pipex, bool	exit_status);
 
 #endif
