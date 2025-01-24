@@ -12,7 +12,7 @@
 
 NAME = pipex
 
-SRCS =	main.c \
+SRCS =	testmain.c \
 		allocation_pipex.c \
 		allocation_and_cpy.c \
 		store_args_in_struct.c \
