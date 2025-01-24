@@ -32,5 +32,6 @@ void	store_args_in_struct(t_pipex *pipex, int argc, char **argv)
 			free_exit(pipex, false);
 		pipex->cmdc_i++;
 	}
+	pipex->cmdv[pipex->cmdc_i] = NULL;
 	pipex->cmdc_i = 0;
 }

@@ -14,10 +14,6 @@
 
 int	exec_to_outfile(t_pipex *pipex, char *const *envp)
 {
-	pipex->full_path = validate_cmd_full_path(pipex,
-			pipex->cmdv[pipex->cmdc_i][0]);
-	pipex->execve_argv
-		= store_execve_argv(pipex, pipex->cmdv[pipex->cmdc_i]);
 	pipex->outfile_fd = open(pipex->outfile_name, O_WRONLY);
 	if (dup2(pipex->pipe_fd[1], STDIN_FILENO) == -1)
 	{
