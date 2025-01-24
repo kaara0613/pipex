@@ -69,10 +69,10 @@ char	**store_execve_argv(t_pipex *pipex, char **cmd);
 void	exec_from_infile(t_pipex *pipex, char *const *envp);
 
 //exec_to_from_pipefd.c
-int		exec_to_from_pipefd(t_pipex *pipex, char *const *envp);
+void	exec_to_from_pipefd(t_pipex *pipex, char *const *envp);
 
 //exec_to_outfile.c
-int		exec_to_outfile(t_pipex *pipex, char *const *envp);
+void	exec_to_outfile(t_pipex *pipex, char *const *envp);
 
 //free_execve_argv.c
 void	free_execve_argv(char **execve_argv);

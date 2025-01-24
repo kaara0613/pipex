@@ -22,8 +22,7 @@ int	main(int argc, char **argv, char *const *envp)
     store_args_in_struct(pipex, argc, argv);
 	pipex->path = get_path_from_envp(envp, pipex);
 	pipex->final_exit_status = spawn_child_and_process(pipex, envp);
-    return (0);
-	// close(pipex->outfile_fd);
-	// free_exit(pipex, true);
-	// return (pipex->final_exit_status);
+	close(pipex->outfile_fd);
+	return (pipex->final_exit_status);
+	free_exit(pipex, true);
 }

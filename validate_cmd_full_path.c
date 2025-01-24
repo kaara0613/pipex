@@ -27,13 +27,16 @@ char	*validate_cmd_full_path(t_pipex *pipex, char *cmd)
 		full_path = ft_strjoin(add_slash, cmd);
 		if (full_path == NULL)
 			free_exit(pipex, false);
-		if (access(full_path, X_OK))
-			break ;
 		free(add_slash);
+		add_slash = NULL;
+		if (access(full_path, X_OK) == 1)
+			break ;
 		free(full_path);
+		full_path = NULL;
 		i++;
 	}
-	free(add_slash);
+	if (full_path == NULL)
+		perror ("Not found command full_path.");
 	return (full_path);
 }
 

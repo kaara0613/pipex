@@ -12,7 +12,7 @@
 
 #include "pipex.h"
 
-int	exec_to_from_pipefd(t_pipex *pipex, char *const *envp)
+void	exec_to_from_pipefd(t_pipex *pipex, char *const *envp)
 {
 	if (dup2(pipex->pipe_fd[1], STDIN_FILENO) == -1)
 	{

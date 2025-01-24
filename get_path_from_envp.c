@@ -6,7 +6,7 @@
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 15:36:50 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/24 14:58:56 by kaara            ###   ########.fr       */
+/*   Updated: 2025/01/24 23:13:46 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,11 @@ char	**get_path_from_envp(char *const *envp, t_pipex *pipex)
 		if (ft_strncmp(envp[i], "PATH=", sizeof(char) * 5) == 0)
 			break ;
 		i++;
+	}
+	if (envp[i] == NULL)
+	{
+    	perror("PATH not found in envp");
+    	free_exit(pipex, false);
 	}
 	path = ft_split(envp[i] + 5, ':');
 	if (path == NULL)

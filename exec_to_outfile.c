@@ -12,7 +12,7 @@
 
 #include "pipex.h"
 
-int	exec_to_outfile(t_pipex *pipex, char *const *envp)
+void	exec_to_outfile(t_pipex *pipex, char *const *envp)
 {
 	pipex->outfile_fd = open(pipex->outfile_name, O_WRONLY);
 	if (dup2(pipex->pipe_fd[1], STDIN_FILENO) == -1)
