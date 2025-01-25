@@ -6,7 +6,7 @@
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:01 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/25 11:34:27 by kaara            ###   ########.fr       */
+/*   Updated: 2025/01/25 15:35:49 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,10 @@ int	spawn_child_and_process(t_pipex	*pipex, char *const *envp)
 {
 	pid_t	pid;
 
-	if (pipex->cmdc_i >= pipex->cmdc - 1)
+	//
+	printf("pipex->cmdc_i:%d\n", pipex->cmdc_i);
+	//
+	if (pipex->cmdc_i > pipex->cmdc - 1)
 		return (pipex->final_exit_status);
 	pipex->execve_argv
 		= store_execve_argv(pipex, pipex->cmdv[pipex->cmdc_i]);
@@ -30,9 +33,12 @@ int	spawn_child_and_process(t_pipex	*pipex, char *const *envp)
 		perror("execve failed");
 		exit(EXIT_FAILURE);
 	}
+	//
+	printf("spawn_child_and_process\n");
+	//
 	pipex->cmdc_i++;
 	free_execve_argv(pipex->execve_argv);
-	close(pipex->pipe_fd[0]);
+	close(pipex->pipe_fd[1]);
 	spawn_child_and_process(pipex, envp);
 	waitpid(pid, &pipex->exit_status, 0);
 	return (pipex->final_exit_status);

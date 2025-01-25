@@ -14,18 +14,18 @@
 
 void	to_from_pipefd(t_pipex *pipex)
 {
-	if (dup2(pipex->pipe_fd[1], STDIN_FILENO) == -1)
+	if (dup2(pipex->pipe_fd[0], STDIN_FILENO) == -1)
 	{
 		perror("dup2 return -1.");
 		exit(EXIT_FAILURE);
 	}
-	close(pipex->pipe_fd[1]);
+	close(pipex->pipe_fd[0]);
 	if (pipe(pipex->pipe_fd) == -1)
 	{
 		perror("pipe return -1.");
 		exit(EXIT_FAILURE);
 	}
-	if (dup2(STDOUT_FILENO, pipex->pipe_fd[0]) == -1)
+	if (dup2(STDOUT_FILENO, pipex->pipe_fd[1]) == -1)
 	{
 		perror("dup2 return -1.");
 		exit(EXIT_FAILURE);

@@ -24,6 +24,7 @@ int	main(int argc, char **argv, char *const *envp)
 	pipex->final_exit_status = spawn_child_and_process(pipex, envp);
 	close(pipex->outfile_fd);
 	free_exit(pipex, true);
+	printf("main\n");
 	return (pipex->final_exit_status);
 }
 
