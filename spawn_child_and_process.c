@@ -6,7 +6,7 @@
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:01 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/24 22:37:55 by kaara            ###   ########.fr       */
+/*   Updated: 2025/01/25 11:34:27 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,15 @@ int	spawn_child_and_process(t_pipex	*pipex, char *const *envp)
 		return (pipex->final_exit_status);
 	pipex->execve_argv
 		= store_execve_argv(pipex, pipex->cmdv[pipex->cmdc_i]);
+	setup_pipe_connection(pipex);
 	pid = fork();
 	if (pid < 0)
 		false_fork(pipex);
 	else if (pid == 0)
 	{
-		if (pipex->cmdc_i == 0)
-			exec_from_infile(pipex, envp);
-		else if (pipex->cmdc_i == pipex->cmdc)
-			exec_to_outfile(pipex, envp);
-		else
-			exec_to_from_pipefd(pipex, envp);
+		execve(pipex->full_path, pipex->execve_argv, envp);
+		perror("execve failed");
+		exit(EXIT_FAILURE);
 	}
 	pipex->cmdc_i++;
 	free_execve_argv(pipex->execve_argv);

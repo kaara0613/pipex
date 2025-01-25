@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include <stdio.h>
 
 char	*validate_cmd_full_path(t_pipex *pipex, char *cmd)
 {
@@ -29,7 +30,7 @@ char	*validate_cmd_full_path(t_pipex *pipex, char *cmd)
 			free_exit(pipex, false);
 		free(add_slash);
 		add_slash = NULL;
-		if (access(full_path, X_OK) == 1)
+		if (access(full_path, X_OK) == 0)
 			break ;
 		free(full_path);
 		full_path = NULL;

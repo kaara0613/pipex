@@ -12,18 +12,19 @@
 
 NAME = pipex
 
-SRCS =	testmain.c \
+SRCS =	main.c \
 		allocation_pipex.c \
 		allocation_and_cpy.c \
 		store_args_in_struct.c \
 		get_path_from_envp.c \
 		spawn_child_and_process.c \
+		setup_pipe_connection.c \
 		false_fork.c \
 		validate_cmd_full_path.c \
 		store_execve_argv.c \
-		exec_from_infile.c \
-		exec_to_from_pipefd.c \
-		exec_to_outfile.c \
+		from_infile.c \
+		to_from_pipefd.c \
+		to_outfile.c \
 		free_execve_argv.c \
 		free_exit.c
 

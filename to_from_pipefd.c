@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   exec_to_outfile.c                                  :+:      :+:    :+:   */
+/*   exec_to_from_pipefd.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/21 15:25:09 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/21 15:25:09 by kaara            ###   ########.fr       */
+/*   Created: 2025/01/21 15:25:15 by kaara             #+#    #+#             */
+/*   Updated: 2025/01/21 15:25:15 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-void	exec_to_outfile(t_pipex *pipex, char *const *envp)
+void	to_from_pipefd(t_pipex *pipex)
 {
-	pipex->outfile_fd = open(pipex->outfile_name, O_WRONLY);
 	if (dup2(pipex->pipe_fd[1], STDIN_FILENO) == -1)
 	{
 		perror("dup2 return -1.");
@@ -26,13 +25,9 @@ void	exec_to_outfile(t_pipex *pipex, char *const *envp)
 		perror("pipe return -1.");
 		exit(EXIT_FAILURE);
 	}
-	close(pipex->pipe_fd[0]);
-	if (dup2(STDOUT_FILENO, pipex->outfile_fd) == -1)
+	if (dup2(STDOUT_FILENO, pipex->pipe_fd[0]) == -1)
 	{
 		perror("dup2 return -1.");
 		exit(EXIT_FAILURE);
 	}
-	execve(pipex->full_path, pipex->execve_argv, envp);
-	perror("execve failed");
-	exit(EXIT_FAILURE);
 }

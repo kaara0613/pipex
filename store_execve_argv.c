@@ -6,7 +6,7 @@
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:12:27 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/24 22:40:20 by kaara            ###   ########.fr       */
+/*   Updated: 2025/01/25 10:57:10 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ char	**store_execve_argv(t_pipex *pipex, char **cmd)
 		pipex->cmdv[pipex->cmdc_i][0]);
 	if (pipex->full_path == NULL)
 		free_exit(pipex, false);
-	//
-	//
 	while (cmd[execve_argc_i] != NULL)
 		execve_argc_i++;
 	execve_argv = (char **)malloc(sizeof(char *) * execve_argc_i - 1);

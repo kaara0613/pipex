@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   setup_pipe_connection.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/17 16:17:24 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/17 16:17:24 by kaara            ###   ########.fr       */
+/*   Created: 2025/01/25 10:30:25 by kaara             #+#    #+#             */
+/*   Updated: 2025/01/25 10:30:25 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int	main(int argc, char **argv, char *const *envp)
+void setup_pipe_connection(t_pipex *pipex)
 {
-	t_pipex	*pipex;
-
-	if (argc == 1)
-		return (0);
-	pipex = allocation_pipex();
-    store_args_in_struct(pipex, argc, argv);
-	pipex->path = get_path_from_envp(envp, pipex);
-	pipex->final_exit_status = spawn_child_and_process(pipex, envp);
-	close(pipex->outfile_fd);
-	free_exit(pipex, true);
-	return (pipex->final_exit_status);
+	if (pipex->cmdc_i == 0)
+		from_infile(pipex);
+	else if (pipex->cmdc_i == pipex->cmdc)
+		to_outfile(pipex);
+	else
+		to_from_pipefd(pipex);
 }
-

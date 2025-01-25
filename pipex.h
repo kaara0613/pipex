@@ -66,13 +66,16 @@ char	*validate_cmd_full_path(t_pipex *pipex, char *cmd);
 char	**store_execve_argv(t_pipex *pipex, char **cmd);
 
 //voidexec_from_infile.c
-void	exec_from_infile(t_pipex *pipex, char *const *envp);
+void	from_infile(t_pipex *pipex);
+
+//setup_pipe_connection.c
+void 	setup_pipe_connection(t_pipex *pipex);
 
 //exec_to_from_pipefd.c
-void	exec_to_from_pipefd(t_pipex *pipex, char *const *envp);
+void	to_from_pipefd(t_pipex *pipex);
 
 //exec_to_outfile.c
-void	exec_to_outfile(t_pipex *pipex, char *const *envp);
+void	to_outfile(t_pipex *pipex);
 
 //free_execve_argv.c
 void	free_execve_argv(char **execve_argv);
