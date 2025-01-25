@@ -25,7 +25,7 @@ void	to_from_pipefd(t_pipex *pipex)
 		perror("pipe return -1.");
 		exit(EXIT_FAILURE);
 	}
-	if (dup2(STDOUT_FILENO, pipex->pipe_fd[1]) == -1)
+	if (dup2(pipex->pipe_fd[1], STDOUT_FILENO) == -1)
 	{
 		perror("dup2 return -1.");
 		exit(EXIT_FAILURE);

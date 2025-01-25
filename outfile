@@ -1,0 +1,28 @@
+
+
+
+-rw-r--r-- 1 kaara 2020  1315 Jan 23 16:29 allocation_and_cpy.c
+-rw-r--r-- 1 kaara 2020  1584 Jan 25 13:13 allocation_and_cpy.o
+-rw-r--r-- 1 kaara 2020  1118 Jan 17 18:09 allocation_pipex.c
+-rw-r--r-- 1 kaara 2020  1432 Jan 25 13:13 allocation_pipex.o
+-rw-r--r-- 1 kaara 2020  1016 Jan 22 12:01 false_fork.c
+-rw-r--r-- 1 kaara 2020  1053 Jan 25 13:13 free_execve_argv.c
+-rw-r--r-- 1 kaara 2020  1208 Jan 25 13:13 free_execve_argv.o
+-rw-r--r-- 1 kaara 2020  1425 Jan 25 13:13 free_exit.c
+-rw-r--r-- 1 kaara 2020  1369 Jan 25 15:57 from_infile.c
+-rw-r--r-- 1 kaara 2020  1352 Jan 25 13:13 get_path_from_envp.c
+-rwxr-xr-x 1 kaara 2020  1321 Jan 25 15:49 main.c
+-rw-r--r-- 1 kaara 2020  1125 Jan 25 15:58 setup_pipe_connection.c
+-rw-r--r-- 1 kaara 2020  1344 Jan 25 15:58 setup_pipe_connection.o
+-rw-r--r-- 1 kaara 2020  1553 Jan 25 15:58 spawn_child_and_process.c
+-rw-r--r-- 1 kaara 2020  2104 Jan 25 15:58 spawn_child_and_process.o
+-rwxr-xr-x 1 kaara 2020  1689 Jan 25 13:13 store_args_in_struct.c
+-rw-r--r-- 1 kaara 2020  1784 Jan 25 13:13 store_args_in_struct.o
+-rw-r--r-- 1 kaara 2020  1837 Jan 25 13:13 store_execve_argv.c
+-rw-r--r-- 1 kaara 2020  1664 Jan 25 13:13 store_execve_argv.o
+-rw-r--r-- 1 kaara 2020  1358 Jan 25 13:13 testmain.c
+-rw-r--r-- 1 kaara 2020  1317 Jan 25 16:00 to_from_pipefd.c
+-rw-r--r-- 1 kaara 2020  1400 Jan 25 15:57 to_outfile.c
+-rw-r--r-- 1 kaara 2020  1542 Jan 25 13:13 validate_cmd_full_path.c
+-rw-r--r-- 1 kaara 2020  1848 Jan 25 13:13 validate_cmd_full_path.o
+drwxr-xr-x 2 kaara 2020    27 Jan 20 21:56 .vscode

@@ -14,9 +14,6 @@
 
 void	setup_pipe_connection(t_pipex *pipex)
 {
-		//
-		printf("setup_pipe_connection\n");
-		//
 	if (pipex->cmdc_i == 0)
 		from_infile(pipex);
 	else if (pipex->cmdc_i == pipex->cmdc - 1)
