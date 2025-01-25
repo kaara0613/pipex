@@ -54,7 +54,7 @@ char	**get_path_from_envp(char *const *envp, t_pipex *pipex);
 
 //spawn_child_and_process.c
 int		spawn_child_and_process(t_pipex	*pipex,
-			char *const *envp);
+			char *const *envp, int cmdc_i);
 
 //false_fork.c
 void	false_fork(t_pipex	*pipex);
