@@ -21,7 +21,7 @@ void	store_args_in_struct(t_pipex *pipex, int argc, char **argv)
 	pipex->cmdv = (char ***)malloc(sizeof(char **) * (pipex->cmdc + 1));
 	if (pipex->cmdv == NULL)
 		free_exit(pipex, 1);
-	while (pipex->cmdc_i <= pipex->cmdc - 1)
+	while (pipex->cmdc_i < pipex->cmdc)
 	{
 		pipex->cmdv[pipex->cmdc_i] = ft_split(argv[pipex->cmdc_i + 1 + 1], ' ');
 		if (pipex->cmdv[pipex->cmdc_i] == NULL)

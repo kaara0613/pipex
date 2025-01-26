@@ -16,12 +16,13 @@ char	*allocation_and_cpy(t_pipex *pipex, const char *src)
 {
 	char	*result_str;
 
-	result_str = (char *)malloc(sizeof(char) * ft_strlen(src));
+	result_str = (char *)malloc(sizeof(char) * ft_strlen(src) + 1);
 	if (result_str == NULL)
 	{
 		perror("allocation filed");
 		free_exit(pipex, 1);
 	}
-	ft_memcpy(result_str, src, sizeof(char) * ft_strlen(src));
+	ft_strlcpy(result_str, src, sizeof(char) * ft_strlen(src) + 1);
+
 	return (result_str);
 }
