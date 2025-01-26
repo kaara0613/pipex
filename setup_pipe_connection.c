@@ -12,11 +12,11 @@
 
 #include "pipex.h"
 
-void	setup_pipe_connection(t_pipex *pipex)
+void	setup_pipe_connection(t_pipex *pipex, int cmdc_i)
 {
-	if (pipex->cmdc_i == 0)
+	if (cmdc_i == 0)
 		from_infile(pipex);
-	else if (pipex->cmdc_i == pipex->cmdc - 1)
+	else if (cmdc_i == pipex->cmdc - 1)
 		to_outfile(pipex);
 	else
 		to_from_pipefd(pipex);

@@ -51,7 +51,7 @@ void	store_args_in_struct(t_pipex *pipex, int argc, char **argv);
 char	**get_path_from_envp(char *const *envp, t_pipex *pipex);
 
 //spawn_child_and_process.c
-int	spawn_child_and_process(t_pipex	*pipex, char *const *envp, int cmdc_i);
+int		spawn_child_and_process(t_pipex	*pipex, char *const *envp, int cmdc_i);
 
 //false_fork.c
 void	false_fork(t_pipex	*pipex);
@@ -66,7 +66,7 @@ char	**store_execve_argv(t_pipex *pipex, char **cmd);
 void	from_infile(t_pipex *pipex);
 
 //setup_pipe_connection.c
-void 	setup_pipe_connection(t_pipex *pipex);
+void 	setup_pipe_connection(t_pipex *pipex, int cmdc_i);
 
 //exec_to_from_pipefd.c
 void	to_from_pipefd(t_pipex *pipex);

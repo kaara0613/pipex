@@ -14,10 +14,11 @@
 
 void	to_outfile(t_pipex *pipex)
 {
-	pipex->outfile_fd = open(pipex->outfile_name, O_WRONLY);
-	if (pipex->infile_fd == -1)
+	pipex->outfile_fd = open(pipex->outfile_name,
+		O_WRONLY | O_TRUNC | O_CREAT, 0644);
+	if (pipex->outfile_fd == -1)
 	{
-		perror("open(outfile_name, O_RDONLY) return -1.");
+		perror("open outfile_name return -1.");
 		exit(EXIT_FAILURE);
 	}
 	if (dup2(pipex->pipe_fd[0], STDIN_FILENO) == -1)
@@ -26,15 +27,10 @@ void	to_outfile(t_pipex *pipex)
 		exit(EXIT_FAILURE);
 	}
 	close(pipex->pipe_fd[0]);
-	if (pipe(pipex->pipe_fd) == -1)
-	{
-		perror("pipe return -1.");
-		exit(EXIT_FAILURE);
-	}
-	close(pipex->pipe_fd[1]);
 	if (dup2(pipex->outfile_fd, STDOUT_FILENO) == -1)
 	{
 		perror("dup2 return -1.");
 		exit(EXIT_FAILURE);
 	}
+	close(pipex->outfile_fd);
 }
