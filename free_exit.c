@@ -6,7 +6,7 @@
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 15:53:14 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/26 16:05:17 by kaara            ###   ########.fr       */
+/*   Updated: 2025/01/26 21:52:04 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,7 @@ int	free_exit(t_pipex	*pipex, int	exit_status)
 		free(pipex->path[i++]);
 	free(pipex->path);
 	free(pipex);
-	if (exit_status == 0)
-		return (1);
-	else if (exit_status == false)
+	if (exit_status)
 		exit (exit_status);
-	return (0);
+	return (1);
 }

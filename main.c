@@ -26,4 +26,3 @@ int	main(int argc, char **argv, char *const *envp)
 	free_exit(pipex, 0);
 	return (exit_status);
 }
-
