@@ -15,15 +15,16 @@
 int	main(int argc, char **argv, char *const *envp)
 {
 	t_pipex	*pipex;
+	int		exit_status;
 
 	if (argc == 1)
 		return (0);
 	pipex = allocation_pipex();
     store_args_in_struct(pipex, argc, argv);
 	pipex->path = get_path_from_envp(envp, pipex);
-	pipex->final_exit_status = spawn_child_and_process(pipex, envp);
+	exit_status = spawn_child_and_process(pipex, envp, 0);
 	close(pipex->outfile_fd);
 	free_exit(pipex, 0);
-	return (pipex->final_exit_status);
+	return (exit_status);
 }
 
