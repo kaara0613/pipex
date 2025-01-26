@@ -20,6 +20,11 @@ void	from_infile(t_pipex *pipex)
 		exit(EXIT_FAILURE);
 	}
 	pipex->infile_fd = open(pipex->infile_name, O_RDONLY);
+	if (pipex->infile_fd == -1)
+	{
+		perror("open(infile_name, O_RDONLY); return -1.");
+		exit(EXIT_FAILURE);
+	}
 	if (dup2(pipex->infile_fd, STDIN_FILENO) == -1)
 	{
 		perror("dup2 return -1.");

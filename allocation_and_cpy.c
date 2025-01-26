@@ -12,7 +12,7 @@
 
 #include "pipex.h"
 
-char	*allocation_and_cpy(const char *src)
+char	*allocation_and_cpy(t_pipex *pipex, const char *src)
 {
 	char	*result_str;
 
@@ -20,11 +20,8 @@ char	*allocation_and_cpy(const char *src)
 	if (result_str == NULL)
 	{
 		perror("allocation filed");
-		return (NULL);
+		free_exit(pipex, 1);
 	}
 	ft_memcpy(result_str, src, sizeof(char) * ft_strlen(src));
 	return (result_str);
 }
-
-
-//ここではexitしないから呼び出し元で全体freeする必要がある。

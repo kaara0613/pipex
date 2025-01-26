@@ -15,5 +15,5 @@
 void	false_fork(t_pipex	*pipex)
 {
 	perror("false fork");
-	free_exit(pipex, false);
+	free_exit(pipex, 1);
 }

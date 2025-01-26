@@ -15,6 +15,11 @@
 void	to_outfile(t_pipex *pipex)
 {
 	pipex->outfile_fd = open(pipex->outfile_name, O_WRONLY);
+	if (pipex->infile_fd == -1)
+	{
+		perror("open(outfile_name, O_RDONLY) return -1.");
+		exit(EXIT_FAILURE);
+	}
 	if (dup2(pipex->pipe_fd[0], STDIN_FILENO) == -1)
 	{
 		perror("dup2 return -1.");

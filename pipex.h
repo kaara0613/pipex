@@ -36,15 +36,13 @@ typedef struct s_pipex
 	int		outfile_fd;
 	int		pipe_fd[2];
 	char	**execve_argv;
-	int		exit_status;
-	int		final_exit_status;
 }	t_pipex;
 
 //allocation_pipex.c
 t_pipex	*allocation_pipex(void);
 
 //allocation_and_cpy.c
-char	*allocation_and_cpy(const char *src);
+char	*allocation_and_cpy(t_pipex *pipex, const char *src);
 
 //store_args_in_struct.c
 void	store_args_in_struct(t_pipex *pipex, int argc, char **argv);
@@ -53,8 +51,7 @@ void	store_args_in_struct(t_pipex *pipex, int argc, char **argv);
 char	**get_path_from_envp(char *const *envp, t_pipex *pipex);
 
 //spawn_child_and_process.c
-int		spawn_child_and_process(t_pipex	*pipex,
-			char *const *envp);
+int	spawn_child_and_process(t_pipex	*pipex, char *const *envp, int cmdc_i);
 
 //false_fork.c
 void	false_fork(t_pipex	*pipex);
@@ -81,6 +78,6 @@ void	to_outfile(t_pipex *pipex);
 void	free_execve_argv(char **execve_argv);
 
 //free_exit.c
-int		free_exit(t_pipex	*pipex, bool	exit_status);
+int		free_exit(t_pipex	*pipex, int	exit_status);
 
 #endif
