@@ -18,7 +18,6 @@ void	to_from_pipefd(t_pipex *pipex)
 	{
 		perror("dup2 return -1.");
 		free_exit(pipex, EXIT_FAILURE);
-
 	}
 	close(pipex->pipe_fd[0]);
 	if (pipe(pipex->pipe_fd) == -1)
