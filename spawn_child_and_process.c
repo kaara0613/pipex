@@ -6,7 +6,7 @@
 /*   By: kaara <kaara@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:01 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/29 10:20:00 by kaara            ###   ########.fr       */
+/*   Updated: 2025/01/29 19:53:05 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	spawn_child_and_process(t_pipex	*pipex, char *const *envp, int cmdc_i)
 {
 	pid_t	pid;
 	int		exit_status;
-	int		no_use_exit_status;
+	int		pre_exit_status;
 
 	if (cmdc_i >= pipex->cmdc)
 		return (0);
@@ -28,8 +28,11 @@ int	spawn_child_and_process(t_pipex	*pipex, char *const *envp, int cmdc_i)
 		chiled_process(pipex, envp, cmdc_i);
 	exit_status = spawn_child_and_process(pipex, envp, cmdc_i + 1);
 	if (cmdc_i == pipex->cmdc - 1)
-		waitpid(pid, &exit_status, 0);
+	{
+		waitpid(pid, &pre_exit_status, 0);
+		exit_status = WEXITSTATUS(pre_exit_status);
+	}
 	else
-		waitpid(pid, &no_use_exit_status, 0);
-	return (WEXITSTATUS(exit_status));
+		waitpid(pid, &pre_exit_status, 0);
+	return (exit_status);
 }
