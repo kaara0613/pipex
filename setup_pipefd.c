@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   exec_to_from_pipefd.c                              :+:      :+:    :+:   */
+/*   exec_setup_pipefd.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,14 +12,17 @@
 
 #include "pipex.h"
 
-void	to_from_pipefd(t_pipex *pipex)
+void	setup_pipefd(t_pipex *pipex, int cmdc_i)
 {
-	if (dup2(pipex->pipe_fd[0], STDIN_FILENO) == -1)
+	if (cmdc_i != 0)
 	{
-		perror("dup2 return -1.");
-		free_exit(pipex, EXIT_FAILURE);
-	}
-	close(pipex->pipe_fd[0]);
+		if (dup2(pipex->pipe_fd[0], STDIN_FILENO) == -1)
+		{
+			perror("dup2 return -1.");
+			free_exit(pipex, EXIT_FAILURE);
+		}
+		close(pipex->pipe_fd[0]);
+	}	
 	if (pipe(pipex->pipe_fd) == -1)
 	{
 		perror("pipe return -1.");

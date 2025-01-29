@@ -18,12 +18,13 @@ SRCS =	main.c \
 		store_args_in_struct.c \
 		get_path_from_envp.c \
 		spawn_child_and_process.c \
-		setup_pipe_connection.c \
+		setup_filefd.c \
 		false_fork.c \
+		chiled_process.c \
 		validate_cmd_full_path.c \
 		store_execve_argv.c \
 		from_infile.c \
-		to_from_pipefd.c \
+		setup_pipefd.c \
 		to_outfile.c \
 		free_execve_argv.c \
 		free_exit.c

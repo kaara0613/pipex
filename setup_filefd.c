@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   exec_from_infile.c                                 :+:      :+:    :+:   */
+/*   setup_filefd.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/21 15:25:20 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/21 15:25:20 by kaara            ###   ########.fr       */
+/*   Created: 2025/01/25 10:30:25 by kaara             #+#    #+#             */
+/*   Updated: 2025/01/25 10:30:25 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-void	from_infile(t_pipex *pipex)
+void	setup_filefd(t_pipex *pipex, int cmdc_i)
 {
-	pipex->infile_fd = open(pipex->infile_name, O_RDONLY);
-	if (pipex->infile_fd == -1)
-	{
-		perror("open(infile_name, O_RDONLY); return -1.\n");
-		free_exit(pipex, 1);
-	}
-	else if (dup2(pipex->infile_fd, STDIN_FILENO) == -1)
-	{
-		perror("dup2 return -1.\n");
-		free_exit(pipex, 1);
-	}
-	close(pipex->infile_fd);
+	if (cmdc_i == 0)
+		from_infile(pipex);
+	else if (cmdc_i == pipex->cmdc - 1)
+		to_outfile(pipex);
 }

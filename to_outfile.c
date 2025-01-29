@@ -19,18 +19,12 @@ void	to_outfile(t_pipex *pipex)
 	if (pipex->outfile_fd == -1)
 	{
 		perror("open outfile_name return -1.");
-		exit(EXIT_FAILURE);
+		free_exit(pipex, EXIT_FAILURE);
 	}
 	else if (dup2(pipex->outfile_fd, STDOUT_FILENO) == -1)
 	{
 		perror("dup2 return -1.");
-		exit(EXIT_FAILURE);
+		free_exit(pipex, EXIT_FAILURE);
 	}
 	close(pipex->outfile_fd);
-	if (dup2(pipex->pipe_fd[0], STDIN_FILENO) == -1)
-	{
-		perror("dup2 return -1.");
-		exit(EXIT_FAILURE);
-	}
-	close(pipex->pipe_fd[0]);
 }

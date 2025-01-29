@@ -59,17 +59,20 @@ void	false_fork(t_pipex	*pipex);
 //validate_cmd_full_path.c
 char	*validate_cmd_full_path(t_pipex *pipex, char *cmd);
 
+//chiled_process.c
+void	chiled_process(t_pipex *pipex, char *const *envp, int cmdc_i);
+
 //store_execve_argv.c
 char	**store_execve_argv(t_pipex *pipex, char **cmd);
 
 //voidexec_from_infile.c
 void	from_infile(t_pipex *pipex);
 
-//setup_pipe_connection.c
-void 	setup_pipe_connection(t_pipex *pipex, int cmdc_i);
+//setup_filefd.c
+void 	setup_filefd(t_pipex *pipex, int cmdc_i);
 
-//exec_to_from_pipefd.c
-void	to_from_pipefd(t_pipex *pipex);
+//exec_setup_pipefd.c
+void	setup_pipefd(t_pipex *pipex, int cmdc_i);
 
 //exec_to_outfile.c
 void	to_outfile(t_pipex *pipex);
