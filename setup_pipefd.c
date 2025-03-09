@@ -22,7 +22,7 @@ void	setup_pipefd(t_pipex *pipex, int cmdc_i)
 			free_exit(pipex, EXIT_FAILURE);
 		}
 		close(pipex->pipe_fd[0]);
-	}	
+	}
 	if (pipe(pipex->pipe_fd) == -1)
 	{
 		perror("pipe return -1.");

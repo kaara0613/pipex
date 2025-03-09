@@ -12,7 +12,7 @@
 
 #include "pipex.h"
 
-void chiled_process(t_pipex *pipex, char *const *envp, int cmdc_i)
+void	chiled_process(t_pipex *pipex, char *const *envp, int cmdc_i)
 {
 	setup_filefd(pipex, cmdc_i);
 	pipex->execve_argv

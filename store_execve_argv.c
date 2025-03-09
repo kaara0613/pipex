@@ -32,7 +32,8 @@ char	**store_execve_argv(t_pipex *pipex, char **cmd)
 	execve_argc_i++;
 	while (cmd[execve_argc_i] != NULL)
 	{
-		execve_argv[execve_argc_i] = allocation_and_cpy(pipex, cmd[execve_argc_i]);
+		execve_argv[execve_argc_i]
+			= allocation_and_cpy(pipex, cmd[execve_argc_i]);
 		execve_argc_i++;
 	}
 	execve_argv[execve_argc_i] = NULL;

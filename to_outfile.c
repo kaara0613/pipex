@@ -15,7 +15,7 @@
 void	to_outfile(t_pipex *pipex)
 {
 	pipex->outfile_fd = open(pipex->outfile_name,
-		O_WRONLY | O_TRUNC | O_CREAT, 0644);
+			O_WRONLY | O_TRUNC | O_CREAT, 0644);
 	if (pipex->outfile_fd == -1)
 	{
 		perror("open outfile_name return -1.");

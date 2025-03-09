@@ -17,8 +17,11 @@ int	main(int argc, char **argv, char *const *envp)
 	t_pipex	*pipex;
 	int		exit_status;
 
-	if (argc == 1)
+	if (argc <= 4)
+	{
+		perror("Missing argument");
 		return (0);
+	}
 	pipex = allocation_pipex();
 	store_args_in_struct(pipex, argc, argv);
 	pipex->path = get_path_from_envp(envp, pipex);

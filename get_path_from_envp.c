@@ -26,8 +26,8 @@ char	**get_path_from_envp(char *const *envp, t_pipex *pipex)
 	}
 	if (envp[i] == NULL)
 	{
-    	perror("PATH not found in envp");
-    	free_exit(pipex, 1);
+		perror("PATH not found in envp");
+		free_exit(pipex, 1);
 	}
 	path = ft_split(envp[i] + 5, ':');
 	if (path == NULL)

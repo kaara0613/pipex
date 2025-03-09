@@ -40,4 +40,3 @@ char	*validate_cmd_full_path(t_pipex *pipex, char *cmd)
 		perror ("Not found command full_path.");
 	return (full_path);
 }
-

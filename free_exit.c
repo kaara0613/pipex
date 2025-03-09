@@ -12,7 +12,7 @@
 
 #include "pipex.h"
 
-int	free_exit(t_pipex	*pipex, int	exit_status)
+int	free_exit(t_pipex *pipex, int exit_status)
 {
 	int	i;
 

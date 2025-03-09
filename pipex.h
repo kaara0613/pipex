@@ -69,7 +69,7 @@ char	**store_execve_argv(t_pipex *pipex, char **cmd);
 void	from_infile(t_pipex *pipex);
 
 //setup_filefd.c
-void 	setup_filefd(t_pipex *pipex, int cmdc_i);
+void	setup_filefd(t_pipex *pipex, int cmdc_i);
 
 //exec_setup_pipefd.c
 void	setup_pipefd(t_pipex *pipex, int cmdc_i);
@@ -81,6 +81,6 @@ void	to_outfile(t_pipex *pipex);
 void	free_execve_argv(char **execve_argv);
 
 //free_exit.c
-int		free_exit(t_pipex	*pipex, int	exit_status);
+int		free_exit(t_pipex *pipex, int exit_status);
 
 #endif
