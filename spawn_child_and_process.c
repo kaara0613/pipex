@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   spawn_child_and_process.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaara <kaara@student.42tokyo.jp>           +#+  +:+       +#+        */
+/*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:01 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/29 19:53:05 by kaara            ###   ########.fr       */
+/*   Updated: 2025/04/22 17:34:39 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int	spawn_child_and_process(t_pipex	*pipex, char *const *envp, int cmdc_i)
 	else if (pid == 0)
 		chiled_process(pipex, envp, cmdc_i);
 	exit_status = spawn_child_and_process(pipex, envp, cmdc_i + 1);
+	close(pipex->pipe_fd[0]);
 	if (cmdc_i == pipex->cmdc - 1)
 	{
 		waitpid(pid, &pre_exit_status, 0);
