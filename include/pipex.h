@@ -21,7 +21,7 @@
 # include <stdbool.h>
 # include <sys/types.h>
 # include <sys/wait.h>
-# include "./libft/libft.h"
+# include "libft.h"
 
 typedef struct s_pipex
 {

@@ -1,4 +1,0 @@
-[submodule "libft"]
-	path = libft
-	branch = arakan_libft
-	url = https://github.com/kaara0613/libft.git
