@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   spawn_child_and_process.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
+/*   By: kaara <kaara@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:01 by kaara             #+#    #+#             */
-/*   Updated: 2025/04/26 13:18:23 by kaara            ###   ########.fr       */
+/*   Updated: 2025/04/26 13:27:41 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 int	spawn_child_and_process(t_pipex	*pipex, char *const *envp, int cmdc_i)
 {

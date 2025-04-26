@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include "ft_libft.h"
+#include <stdlib.h>
 
 void	store_args_in_struct(t_pipex *pipex, int argc, char **argv)
 {

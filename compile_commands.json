@@ -1,0 +1,1335 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_atoi.o",
+      "ft_libft/ft_atoi.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_atoi.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_atoi.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_memchr.o",
+      "ft_libft/ft_memchr.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_memchr.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_memchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_split.o",
+      "ft_libft/ft_split.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_split.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_split.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strncmp.o",
+      "ft_libft/ft_strncmp.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strncmp.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strncmp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_bzero.o",
+      "ft_libft/ft_bzero.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_bzero.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_bzero.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_memcmp.o",
+      "ft_libft/ft_memcmp.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_memcmp.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_memcmp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strchr.o",
+      "ft_libft/ft_strchr.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strchr.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strnstr.o",
+      "ft_libft/ft_strnstr.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strnstr.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strnstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_calloc.o",
+      "ft_libft/ft_calloc.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_calloc.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_calloc.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_memcpy.o",
+      "ft_libft/ft_memcpy.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_memcpy.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_memcpy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strdup.o",
+      "ft_libft/ft_strdup.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strdup.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strdup.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strrchr.o",
+      "ft_libft/ft_strrchr.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strrchr.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strrchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_isalnum.o",
+      "ft_libft/ft_isalnum.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_isalnum.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_isalnum.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_memmove.o",
+      "ft_libft/ft_memmove.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_memmove.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_memmove.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_striteri.o",
+      "ft_libft/ft_striteri.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_striteri.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_striteri.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strtrim.o",
+      "ft_libft/ft_strtrim.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strtrim.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strtrim.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_isalpha.o",
+      "ft_libft/ft_isalpha.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_isalpha.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_isalpha.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_memset.o",
+      "ft_libft/ft_memset.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_memset.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_memset.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strjoin.o",
+      "ft_libft/ft_strjoin.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strjoin.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strjoin.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_substr.o",
+      "ft_libft/ft_substr.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_substr.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_substr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_isascii.o",
+      "ft_libft/ft_isascii.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_isascii.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_isascii.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_putchar_fd.o",
+      "ft_libft/ft_putchar_fd.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_putchar_fd.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_putchar_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strlcat.o",
+      "ft_libft/ft_strlcat.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strlcat.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strlcat.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_tolower.o",
+      "ft_libft/ft_tolower.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_tolower.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_tolower.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_isdigit.o",
+      "ft_libft/ft_isdigit.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_isdigit.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_isdigit.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_putendl_fd.o",
+      "ft_libft/ft_putendl_fd.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_putendl_fd.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_putendl_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strlcpy.o",
+      "ft_libft/ft_strlcpy.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strlcpy.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strlcpy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_toupper.o",
+      "ft_libft/ft_toupper.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_toupper.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_toupper.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_isprint.o",
+      "ft_libft/ft_isprint.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_isprint.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_isprint.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_putnbr_fd.o",
+      "ft_libft/ft_putnbr_fd.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_putnbr_fd.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_putnbr_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strlen.o",
+      "ft_libft/ft_strlen.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strlen.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strlen.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_itoa.o",
+      "ft_libft/ft_itoa.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_itoa.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_itoa.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_putstr_fd.o",
+      "ft_libft/ft_putstr_fd.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_putstr_fd.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_putstr_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_libft/ft_strmapi.o",
+      "ft_libft/ft_strmapi.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_libft/ft_strmapi.c",
+    "output": "/home/lia/pipex/libft/ft_libft/ft_strmapi.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_insert_at.o",
+      "list/list_int_insert_at.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_insert_at.c",
+    "output": "/home/lia/pipex/libft/list/list_int_insert_at.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_pop_at.o",
+      "list/list_int_pop_at.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_pop_at.c",
+    "output": "/home/lia/pipex/libft/list/list_int_pop_at.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_pop_back.o",
+      "list/list_int_pop_back.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_pop_back.c",
+    "output": "/home/lia/pipex/libft/list/list_int_pop_back.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_pop.o",
+      "list/list_int_pop.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_pop.c",
+    "output": "/home/lia/pipex/libft/list/list_int_pop.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_print.o",
+      "list/list_int_print.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_print.c",
+    "output": "/home/lia/pipex/libft/list/list_int_print.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_push.o",
+      "list/list_int_push.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_push.c",
+    "output": "/home/lia/pipex/libft/list/list_int_push.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_rev_rotate.o",
+      "list/list_int_rev_rotate.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_rev_rotate.c",
+    "output": "/home/lia/pipex/libft/list/list_int_rev_rotate.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_rotate.o",
+      "list/list_int_rotate.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_rotate.c",
+    "output": "/home/lia/pipex/libft/list/list_int_rotate.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_clone.o",
+      "list/list_int_clone.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_clone.c",
+    "output": "/home/lia/pipex/libft/list/list_int_clone.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_access_at.o",
+      "list/list_int_access_at.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_access_at.c",
+    "output": "/home/lia/pipex/libft/list/list_int_access_at.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_void_clear.o",
+      "list/list_void_clear.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_void_clear.c",
+    "output": "/home/lia/pipex/libft/list/list_void_clear.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_sort.o",
+      "list/list_int_sort.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_sort.c",
+    "output": "/home/lia/pipex/libft/list/list_int_sort.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "list/list_int_count.o",
+      "list/list_int_count.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/list/list_int_count.c",
+    "output": "/home/lia/pipex/libft/list/list_int_count.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_printf/handle_format.o",
+      "ft_printf/handle_format.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_printf/handle_format.c",
+    "output": "/home/lia/pipex/libft/ft_printf/handle_format.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_printf/hex_handle_format2.o",
+      "ft_printf/hex_handle_format2.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_printf/hex_handle_format2.c",
+    "output": "/home/lia/pipex/libft/ft_printf/hex_handle_format2.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_printf/libftprintf.o",
+      "ft_printf/libftprintf.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_printf/libftprintf.c",
+    "output": "/home/lia/pipex/libft/ft_printf/libftprintf.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_printf/d_handle_format.o",
+      "ft_printf/d_handle_format.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_printf/d_handle_format.c",
+    "output": "/home/lia/pipex/libft/ft_printf/d_handle_format.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_printf/d_hex_handle_format.o",
+      "ft_printf/d_hex_handle_format.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_printf/d_hex_handle_format.c",
+    "output": "/home/lia/pipex/libft/ft_printf/d_hex_handle_format.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_printf/d_libftprintf.o",
+      "ft_printf/d_libftprintf.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/ft_printf/d_libftprintf.c",
+    "output": "/home/lia/pipex/libft/ft_printf/d_libftprintf.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "gnl/get_next_line.o",
+      "gnl/get_next_line.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/gnl/get_next_line.c",
+    "output": "/home/lia/pipex/libft/gnl/get_next_line.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I",
+      "include",
+      "-g",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "gnl/get_next_line_utils.o",
+      "gnl/get_next_line_utils.c"
+    ],
+    "directory": "/home/lia/pipex/libft",
+    "file": "/home/lia/pipex/libft/gnl/get_next_line_utils.c",
+    "output": "/home/lia/pipex/libft/gnl/get_next_line_utils.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/main.c",
+    "output": "/home/lia/pipex/src/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/allocation_pipex.o",
+      "src/allocation_pipex.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/allocation_pipex.c",
+    "output": "/home/lia/pipex/src/allocation_pipex.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/allocation_and_cpy.o",
+      "src/allocation_and_cpy.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/allocation_and_cpy.c",
+    "output": "/home/lia/pipex/src/allocation_and_cpy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/store_args_in_struct.o",
+      "src/store_args_in_struct.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/store_args_in_struct.c",
+    "output": "/home/lia/pipex/src/store_args_in_struct.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/get_path_from_envp.o",
+      "src/get_path_from_envp.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/get_path_from_envp.c",
+    "output": "/home/lia/pipex/src/get_path_from_envp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/spawn_child_and_process.o",
+      "src/spawn_child_and_process.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/spawn_child_and_process.c",
+    "output": "/home/lia/pipex/src/spawn_child_and_process.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/setup_filefd.o",
+      "src/setup_filefd.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/setup_filefd.c",
+    "output": "/home/lia/pipex/src/setup_filefd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/false_fork.o",
+      "src/false_fork.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/false_fork.c",
+    "output": "/home/lia/pipex/src/false_fork.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/chiled_process.o",
+      "src/chiled_process.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/chiled_process.c",
+    "output": "/home/lia/pipex/src/chiled_process.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/validate_cmd_full_path.o",
+      "src/validate_cmd_full_path.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/validate_cmd_full_path.c",
+    "output": "/home/lia/pipex/src/validate_cmd_full_path.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/store_execve_argv.o",
+      "src/store_execve_argv.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/store_execve_argv.c",
+    "output": "/home/lia/pipex/src/store_execve_argv.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/from_infile.o",
+      "src/from_infile.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/from_infile.c",
+    "output": "/home/lia/pipex/src/from_infile.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/setup_pipefd.o",
+      "src/setup_pipefd.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/setup_pipefd.c",
+    "output": "/home/lia/pipex/src/setup_pipefd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/to_outfile.o",
+      "src/to_outfile.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/to_outfile.c",
+    "output": "/home/lia/pipex/src/to_outfile.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/free_execve_argv.o",
+      "src/free_execve_argv.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/free_execve_argv.c",
+    "output": "/home/lia/pipex/src/free_execve_argv.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "include",
+      "-I./libft",
+      "-c",
+      "-o",
+      "src/free_exit.o",
+      "src/free_exit.c"
+    ],
+    "directory": "/home/lia/pipex",
+    "file": "/home/lia/pipex/src/free_exit.c",
+    "output": "/home/lia/pipex/src/free_exit.o"
+  }
+]

@@ -11,6 +11,10 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include "ft_printf.h"
 
 void	to_outfile(t_pipex *pipex)
 {
@@ -18,12 +22,12 @@ void	to_outfile(t_pipex *pipex)
 			O_WRONLY | O_TRUNC | O_CREAT, 0644);
 	if (pipex->outfile_fd == -1)
 	{
-		perror("open outfile_name return -1.");
+		ft_dprintf("open outfile_name return -1.\n");
 		free_exit(pipex, EXIT_FAILURE);
 	}
 	else if (dup2(pipex->outfile_fd, STDOUT_FILENO) == -1)
 	{
-		perror("dup2 return -1.");
+		ft_dprintf("dup2 return -1.\n");
 		free_exit(pipex, EXIT_FAILURE);
 	}
 	close(pipex->outfile_fd);

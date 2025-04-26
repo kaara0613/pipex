@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   store_execve_argv.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
+/*   By: kaara <kaara@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:12:27 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/26 23:16:01 by kaara            ###   ########.fr       */
+/*   Updated: 2025/04/26 13:28:18 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include <stdlib.h>
 
 char	**store_execve_argv(t_pipex *pipex, char **cmd)
 {

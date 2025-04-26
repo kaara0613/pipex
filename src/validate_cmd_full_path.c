@@ -11,7 +11,9 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
-#include <stdio.h>
+#include "ft_libft.h"
+#include "ft_printf.h"
+#include <unistd.h>
 
 char	*validate_cmd_full_path(t_pipex *pipex, char *cmd)
 {
@@ -37,6 +39,6 @@ char	*validate_cmd_full_path(t_pipex *pipex, char *cmd)
 		i++;
 	}
 	if (full_path == NULL)
-		perror ("Not found command full_path.");
+		ft_dprintf("Not found command full_path.\n");
 	return (full_path);
 }

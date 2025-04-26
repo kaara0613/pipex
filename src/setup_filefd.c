@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include <unistd.h>
 
 void	setup_filefd(t_pipex *pipex, int cmdc_i)
 {

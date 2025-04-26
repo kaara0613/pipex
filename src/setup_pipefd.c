@@ -11,6 +11,9 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include "ft_printf.h"
+#include <unistd.h>
+#include <stdlib.h>
 
 void	setup_pipefd(t_pipex *pipex, int cmdc_i)
 {
@@ -18,19 +21,19 @@ void	setup_pipefd(t_pipex *pipex, int cmdc_i)
 	{
 		if (dup2(pipex->pipe_fd[0], STDIN_FILENO) == -1)
 		{
-			perror("dup2 return -1.");
+			ft_dprintf("dup2 return -1.\n");
 			free_exit(pipex, EXIT_FAILURE);
 		}
 		close(pipex->pipe_fd[0]);
 	}
 	if (pipe(pipex->pipe_fd) == -1)
 	{
-		perror("pipe return -1.");
+		ft_dprintf("pipe return -1.\n");
 		free_exit(pipex, EXIT_FAILURE);
 	}
 	if (dup2(pipex->pipe_fd[1], STDOUT_FILENO) == -1)
 	{
-		perror("dup2 return -1.");
+		ft_dprintf("dup2 return -1.\n");
 		free_exit(pipex, EXIT_FAILURE);
 	}
 	close(pipex->pipe_fd[1]);
