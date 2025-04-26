@@ -24,6 +24,7 @@ SRCS =	src/main.c \
 		src/validate_cmd_full_path.c \
 		src/store_execve_argv.c \
 		src/from_infile.c \
+		src/spawn_pipefd.c \
 		src/setup_pipefd.c \
 		src/to_outfile.c \
 		src/free_execve_argv.c \

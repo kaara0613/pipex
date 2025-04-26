@@ -24,6 +24,7 @@ typedef struct s_pipex
 	char	*full_path;
 	int		infile_fd;
 	int		outfile_fd;
+	int		pre_pipefd;
 	int		pipe_fd[2];
 	char	**execve_argv;
 }	t_pipex;
@@ -57,6 +58,9 @@ char	**store_execve_argv(t_pipex *pipex, char **cmd);
 
 //voidexec_from_infile.c
 void	from_infile(t_pipex *pipex);
+
+//spawn_pipefd.c
+void	spawn_pipefd(t_pipex *pipex, int cmdc_i);
 
 //setup_filefd.c
 void	setup_filefd(t_pipex *pipex, int cmdc_i);

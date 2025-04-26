@@ -19,22 +19,21 @@ void	setup_pipefd(t_pipex *pipex, int cmdc_i)
 {
 	if (cmdc_i != 0)
 	{
-		if (dup2(pipex->pipe_fd[0], STDIN_FILENO) == -1)
+		if (dup2(pipex->pre_pipefd, STDIN_FILENO) == -1)
 		{
 			ft_dprintf("dup2 return -1.\n");
 			free_exit(pipex, EXIT_FAILURE);
 		}
+		close(pipex->pre_pipefd);
+	}
+	if (pipex->cmdc - 1 != cmdc_i)
+	{
+		if (dup2(pipex->pipe_fd[1], STDOUT_FILENO) == -1)
+		{
+			ft_dprintf("dup2 return -1.\n");
+			free_exit(pipex, EXIT_FAILURE);
+		}
+		close(pipex->pipe_fd[1]);
 		close(pipex->pipe_fd[0]);
 	}
-	if (pipe(pipex->pipe_fd) == -1)
-	{
-		ft_dprintf("pipe return -1.\n");
-		free_exit(pipex, EXIT_FAILURE);
-	}
-	if (dup2(pipex->pipe_fd[1], STDOUT_FILENO) == -1)
-	{
-		ft_dprintf("dup2 return -1.\n");
-		free_exit(pipex, EXIT_FAILURE);
-	}
-	close(pipex->pipe_fd[1]);
 }
