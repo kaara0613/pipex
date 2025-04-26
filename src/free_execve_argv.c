@@ -6,11 +6,12 @@
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 16:43:48 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/24 15:00:37 by kaara            ###   ########.fr       */
+/*   Updated: 2025/04/26 13:06:43 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include <stdlib.h>
 
 void	free_execve_argv(char **execve_argv)
 {

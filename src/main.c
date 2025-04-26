@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include "ft_printf.h"
 
 int	main(int argc, char **argv, char *const *envp)
 {
@@ -19,7 +20,7 @@ int	main(int argc, char **argv, char *const *envp)
 
 	if (argc <= 4)
 	{
-		perror("Missing argument");
+		ft_dprintf("Missing argument.\n");
 		return (0);
 	}
 	pipex = allocation_pipex();

@@ -13,16 +13,6 @@
 #ifndef PIPEX_H
 # define PIPEX_H
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
-# include <fcntl.h>
-# include <limits.h>
-# include <stdbool.h>
-# include <sys/types.h>
-# include <sys/wait.h>
-# include "libft.h"
-
 typedef struct s_pipex
 {
 	char	*infile_name;

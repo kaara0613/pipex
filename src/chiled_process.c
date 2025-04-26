@@ -11,6 +11,9 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include "ft_printf.h"
+#include <unistd.h>
+#include <stdlib.h>
 
 void	chiled_process(t_pipex *pipex, char *const *envp, int cmdc_i)
 {
@@ -18,6 +21,6 @@ void	chiled_process(t_pipex *pipex, char *const *envp, int cmdc_i)
 	pipex->execve_argv
 		= store_execve_argv(pipex, pipex->cmdv[cmdc_i]);
 	execve(pipex->full_path, pipex->execve_argv, envp);
-	perror("execve failed");
+	ft_dprintf("execve failed.\n");
 	exit(EXIT_FAILURE);
 }

@@ -11,9 +11,10 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include "ft_printf.h"
 
 void	false_fork(t_pipex	*pipex)
 {
-	perror("false fork");
+	ft_dprintf("false fork\n");
 	free_exit(pipex, 1);
 }

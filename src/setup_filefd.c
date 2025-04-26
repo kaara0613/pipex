@@ -18,4 +18,5 @@ void	setup_filefd(t_pipex *pipex, int cmdc_i)
 		from_infile(pipex);
 	else if (cmdc_i == pipex->cmdc - 1)
 		to_outfile(pipex);
+	close(pipex->pipe_fd[0]);
 }

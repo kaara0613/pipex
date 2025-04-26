@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include "ft_libft.h"
+#include "ft_printf.h"
 
 char	*allocation_and_cpy(t_pipex *pipex, const char *src)
 {
@@ -19,7 +21,7 @@ char	*allocation_and_cpy(t_pipex *pipex, const char *src)
 	result_str = (char *)malloc(sizeof(char) * ft_strlen(src) + 1);
 	if (result_str == NULL)
 	{
-		perror("allocation filed");
+		ft_dprintf("allocation filed\n");
 		free_exit(pipex, 1);
 	}
 	ft_strlcpy(result_str, src, sizeof(char) * ft_strlen(src) + 1);

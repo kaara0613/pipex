@@ -6,11 +6,13 @@
 /*   By: kaara <kaara@student.42.jp>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 15:53:14 by kaara             #+#    #+#             */
-/*   Updated: 2025/01/26 21:52:04 by kaara            ###   ########.fr       */
+/*   Updated: 2025/04/26 13:07:12 by kaara            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include <stdlib.h>
+#include <stdbool.h>
 
 int	free_exit(t_pipex *pipex, int exit_status)
 {
